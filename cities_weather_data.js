@@ -1,9 +1,7 @@
-import {city_data_apiKey} from "./config.js"
 
-window.onload = () => {
     //Fetching the bangalore weather data
     fetch(
-      `http://api.weatherapi.com/v1/current.json?key=${city_data_apiKey}&q=bangalore`
+      `http://api.weatherapi.com/v1/current.json?key=f95c5e7704d24f868bc42051250503&q=bangalore`
     )
       .then((response) => response.json())
       .then((data) => {
@@ -24,7 +22,7 @@ window.onload = () => {
   
     //Fetchig the chennai weather data
     fetch(
-      `http://api.weatherapi.com/v1/current.json?key=${city_data_apiKey}&q=chennai`
+      `http://api.weatherapi.com/v1/current.json?key=f95c5e7704d24f868bc42051250503&q=chennai`
     )
       .then((response) => response.json())
       .then((data) => {
@@ -45,7 +43,7 @@ window.onload = () => {
   
     ////Fetchig the mumbai weather data
     fetch(
-      `http://api.weatherapi.com/v1/current.json?key=${city_data_apiKey}&q=mumbai`
+      `http://api.weatherapi.com/v1/current.json?key=f95c5e7704d24f868bc42051250503&q=mumbai`
     )
       .then((response) => response.json())
       .then((data) => {
@@ -66,7 +64,7 @@ window.onload = () => {
   
     //Fetchig the kolkata weather data
     fetch(
-      `http://api.weatherapi.com/v1/current.json?key=${city_data_apiKey}&q=kolkata`
+      `http://api.weatherapi.com/v1/current.json?key=f95c5e7704d24f868bc42051250503&q=kolkata`
     )
       .then((response) => response.json())
       .then((data) => {
@@ -84,5 +82,5 @@ window.onload = () => {
         ).innerHTML = `<strong>${data.current.wind_kph}kph</strong>`;
       })
       .catch((error) => console.error("Error:", error));
-  };
+
   

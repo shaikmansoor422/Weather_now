@@ -1,8 +1,7 @@
-// importing api key from my config.js which is hidden for security purpose
-import {weather_data_apiKey} from "./config.js"
+
 
 // finding the geographical location of the user's device by geolocation API
-// window.onload = ()=>{
+
 if (navigator.geolocation) {
     navigator.geolocation.getCurrentPosition((position) => {
         let latitude = position.coords.latitude;
@@ -40,7 +39,7 @@ form.addEventListener("submit", (event) => {
 // fetching weather API by location by get_Weather_by_location function
 function get_Weather_by_location(latitude, longitude) {
     fetch(
-        `http://api.weatherapi.com/v1/current.json?key=${weather_data_apiKey}&q=${latitude},${longitude}`
+        `http://api.weatherapi.com/v1/current.json?key=924f75f7f6d54c85ba553415250503&q=${latitude},${longitude}`
     )
         .then((response) => response.json())
         .then((data) => { get_Weather(data) })
@@ -51,7 +50,7 @@ function get_Weather_by_location(latitude, longitude) {
 // fetching weather API by location by get_Weather_by_city function
 function get_Weather_by_city(city) {
     fetch(
-        `http://api.weatherapi.com/v1/current.json?key=${weather_data_apiKey}&q=${city}`
+        `http://api.weatherapi.com/v1/current.json?key=924f75f7f6d54c85ba553415250503&q=${city}`
     )
         .then((response) => response.json())
         .then((data) => { get_Weather(data) })
