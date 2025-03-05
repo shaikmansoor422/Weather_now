@@ -39,7 +39,7 @@ form.addEventListener("submit", (event) => {
 // fetching weather API by location by get_Weather_by_location function
 function get_Weather_by_location(latitude, longitude) {
     fetch(
-        `http://api.weatherapi.com/v1/current.json?key=924f75f7f6d54c85ba553415250503&q=${latitude},${longitude}`
+        `https://api.weatherapi.com/v1/current.json?key=924f75f7f6d54c85ba553415250503&q=${latitude},${longitude}`
     )
         .then((response) => response.json())
         .then((data) => { get_Weather(data) })
@@ -50,7 +50,7 @@ function get_Weather_by_location(latitude, longitude) {
 // fetching weather API by location by get_Weather_by_city function
 function get_Weather_by_city(city) {
     fetch(
-        `http://api.weatherapi.com/v1/current.json?key=924f75f7f6d54c85ba553415250503&q=${city}`
+        `https://api.weatherapi.com/v1/current.json?key=924f75f7f6d54c85ba553415250503&q=${city}`
     )
         .then((response) => response.json())
         .then((data) => { get_Weather(data) })

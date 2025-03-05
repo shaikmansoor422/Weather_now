@@ -1,7 +1,7 @@
 
     //Fetching the bangalore weather data
     fetch(
-      `http://api.weatherapi.com/v1/current.json?key=f95c5e7704d24f868bc42051250503&q=bangalore`
+      `https://api.weatherapi.com/v1/current.json?key=f95c5e7704d24f868bc42051250503&q=bangalore`
     )
       .then((response) => response.json())
       .then((data) => {
@@ -22,7 +22,7 @@
   
     //Fetchig the chennai weather data
     fetch(
-      `http://api.weatherapi.com/v1/current.json?key=f95c5e7704d24f868bc42051250503&q=chennai`
+      `https://api.weatherapi.com/v1/current.json?key=f95c5e7704d24f868bc42051250503&q=chennai`
     )
       .then((response) => response.json())
       .then((data) => {
@@ -43,7 +43,7 @@
   
     ////Fetchig the mumbai weather data
     fetch(
-      `http://api.weatherapi.com/v1/current.json?key=f95c5e7704d24f868bc42051250503&q=mumbai`
+      `https://api.weatherapi.com/v1/current.json?key=f95c5e7704d24f868bc42051250503&q=mumbai`
     )
       .then((response) => response.json())
       .then((data) => {
@@ -64,7 +64,7 @@
   
     //Fetchig the kolkata weather data
     fetch(
-      `http://api.weatherapi.com/v1/current.json?key=f95c5e7704d24f868bc42051250503&q=kolkata`
+      `https://api.weatherapi.com/v1/current.json?key=f95c5e7704d24f868bc42051250503&q=kolkata`
     )
       .then((response) => response.json())
       .then((data) => {
