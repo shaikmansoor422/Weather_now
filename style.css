@@ -154,3 +154,24 @@ svg {
   }
 
 
+  /* footer styling for contact styling  */
+footer{
+  background-color: black;
+  padding-top: 20px;
+}
+#contact_container {
+  display: flex;
+  justify-content: left;
+  padding: 0px;
+  width: 205px;
+  margin: auto;
+}
+
+#contact_container svg {
+  height: 20px;
+  margin: 10px;
+}
+#designer{
+  margin:10px auto;
+}
+
