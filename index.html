@@ -12,9 +12,8 @@
     crossorigin="anonymous"></script>
   <link rel="stylesheet" href="./style.css">
   <link rel="icon" href="./images/favicon.webp">
-  <script type="module" src="./config.js"></script>
-  <script type="module" src="./cities_weather_data.js"></script>
-  <script type="module" src="./main_weather_data.js"></script>
+  <script type="module" src="./cities_weather_data.js" defer></script>
+  <script type="module" src="./main_weather_data.js" defer></script>
 
  
   <style>
@@ -68,9 +67,6 @@
             <li>
               Last updated : <strong><span id="last_updated"></span></strong>
             </li>
-            <li>
-              Heat index : <strong><span id="heat_index"></span></strong>
-            </li>
           </ul>
         </div>
       </div>
@@ -82,19 +78,16 @@
           <h6>Location : <span id="locate"></span></h6>
           <ul id="temp_list">
             <li>
-              Country : <strong><span id="country"></span></strong>
+              Timezone : <strong><span id="time_abbr"></span></strong>
             </li>
             <li>
-              Region : <strong><span id="region"></span></strong>
+              Weather code : <strong><span id="weath_code"></span></strong>
             </li>
             <li>
               Latitude : <strong><span id="lat"></span></strong>
             </li>
             <li>
               Longitude : <strong><span id="lon"></span></strong>
-            </li>
-            <li>
-              Timezone : <strong><span id="timezone"></span></strong>
             </li>
           </ul>
         </div>
@@ -106,9 +99,6 @@
         <div>
           <h6>Wind Speed : <span id="wind_speed"></span></h6>
           <ul id="temp_list" style="text-align: start">
-            <li>
-              Visibility : <strong><span id="visibility"></span></strong>
-            </li>
             <li>
               Precipitation : <strong><span id="precip"></span></strong>
             </li>
@@ -126,6 +116,8 @@
       </div>
     </div>
   </main>
+  <div id="comapring_citie" style="color: white; margin: auto;"><h1 style="text-align: center ;text-decoration: underline;">Comparing weather in main cities</h1></div>
+  
   <div id="table_container">
     <table class="table">
       <thead>

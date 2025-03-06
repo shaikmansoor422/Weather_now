@@ -1,8 +1,7 @@
 
     //Fetching the bangalore weather data
     fetch(
-      `https://api.open-meteo.com/v1/forecast?latitude=13.0836939&longitude=80.270186&current_weather=true&hourly=relative_humidity_2m,wind_speed_10m,wind_direction_10m
-
+      `https://api.open-meteo.com/v1/forecast?latitude=12.9716&longitude=77.5946&current_weather=true&hourly=relative_humidity_2m,wind_speed_10m,wind_direction_10m
 `
     )
       .then((response) => response.json())
